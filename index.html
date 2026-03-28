@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../assets/css/styles.min.css" />
+    <link rel="icon" type="image/svg+xml" href="../assets/img/favicon.svg" />
+
+    <!-- Primary Meta Tags -->
+    <title>Luciano Caraballo | About Me</title>
+    <meta
+      name="Keywords"
+      content="Luciano Caraballo, Frontend Engineer, Code, Web Development, User Experience, UI/UX Design, Portfolio, Front-End Developer, Developer, UI Engineer, Uruguay"
+    />
+    <meta
+      name="description"
+      content="  Luciano Caraballo is a skilled Frontend Engineer with experience in crafting elegant and efficient code."
+    />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://israelmitolu.netlify.app/" />
+    <meta
+      property="og:title"
+      content="Luciano | Frontend Developer"
+    />
+    <meta
+      property="og:description"
+      content=" Luciano Caraballo is a skilled Frontend Engineer with experience in crafting elegant and efficient code."
+    />
+    <meta property="og:image" content="/assets/img/seo-img.png" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://israelmitolu.netlify.app/" />
+    <meta
+      property="twitter:title"
+      content="Luciano Caraballo | Frontend Engineer and Technical Writer"
+    />
+    <meta
+      property="twitter:description"
+      content=" Luciano Caraballo is a skilled Frontend Engineer with experience in crafting elegant and efficient code."
+    />
+    <meta property="twitter:image" content="/assets/img/seo-img.png" />
+    <link rel="stylesheet" href="https://use.typekit.net/kse0maf.css" />
+  </head>
+
+  <body>
+    <div class="cursor-effect"></div>
+    <a href="../index.html" class="logo">
+      <img src="../assets/img/favicon.svg" alt="" />
+    </a>
+
+    <section class="more-about">
+      <div class="container">
+        <div class="section-title">
+          <h2>Luciano <span>Caraballo </span>.</h2>
+        </div>
+        <div class="more-about-content">
+          <div class="more-about-img">
+            <img src="../assets/img/IMG_20210217_173633899-min.jpg" alt="" />
+          </div>
+          <div class="more-about-text">
+            <p
+              >Frontend Web Developer based in Uruguay focused on designing
+              engaging UI, building interactive experiences & bringing products
+              to life through design and technology.</p
+            >
+            <br />
+            <p>
+              I have always supported the idea of a minimalistic and
+              user-focused approach to design and development, which I imbibe
+              when designing and building fully responsive web applications.</p
+            >
+            <br />
+            <p
+              >In my spare time, I love to
+              <a
+                href="https://open.spotify.com/playlist/1mHHegPekht63z4EYH5ugM"
+                target="_blank
+              "
+                >listen to</a
+              >
+              and
+              <a href="https://www.instagram.com/i_riffs/" target="_blank"
+                >play</a
+              >
+              neo-jazz instrumentals on the guitar, do pushups(sometimes), go on
+              long walks and take
+              <a href="https://www.instagram.com/israelmitolu/" target="_blank"
+                >nature pictures</a
+              >.</p
+            >
+
+            <h3>Skills</h3>
+            <div class="skills">
+              <div class="skill-item">HTML</div>
+              <div class="skill-item">CSS/SASS</div>
+              <div class="skill-item">ReactJS</div>
+              <div class="skill-item">NextJS</div>
+              <div class="skill-item">Javascript</div>
+              <div class="skill-item">Typescript</div>
+              <div class="skill-item">TailwindCSS</div>
+              <div class="skill-item">Redux</div>
+              <div class="skill-item">GSAP</div>
+              <div class="skill-item">MaterialUI</div>
+              <div class="skill-item">Ant Design</div>
+              <div class="skill-item">styled-components</div>
+              <div class="skill-item">Vite</div>
+              <div class="skill-item">Figma</div>
+              <div class="skill-item">Git/Github</div>
+              <div class="skill-item">PWAs</div>
+            </div>
+            
+              <span>—</span>
+              <a href="../index.html#contact" class="exp-cta">Contact me</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="../assets/js/app.js"></script>
+    <script>
+      const tabsContainer = document.querySelector(".tabs"),
+        moreAboutSection = document.querySelector(".more-about");
+
+      ////Select Tabs
+      tabsContainer.addEventListener("click", (e) => {
+        if (
+          e.target.classList.contains("tab-item") &&
+          !e.target.classList.contains("active")
+        ) {
+          tabsContainer.querySelector(".active").classList.remove("active");
+          e.target.classList.add("active");
+          const target = e.target.getAttribute("data-target");
+          moreAboutSection
+            .querySelector(".tab-content.active")
+            .classList.remove("active");
+          moreAboutSection.querySelector(target).classList.add("active");
+        }
+      });
+    </script>
+  </body>
+</html>
